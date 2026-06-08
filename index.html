@@ -7,6 +7,25 @@
     <meta name="description" content="Pak Kashmir Traders is a leading wholesale supplier of cooking oil, flour, sugar, and rice. Reliable grocery sourcing for retailers and businesses.">
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Chatbot Button -->
+<div class="chat-btn" onclick="toggleChat()">💬</div>
+
+<!-- Chat Window -->
+<div class="chat-box" id="chatBox">
+    <div class="chat-header">
+        Pak Kashmir Bot
+        <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <div class="bot-msg">Welcome to Pak Kashmir Traders 👋 How can I help you?</div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
 <body>
     <header class="site-header">
         <div class="container header-inner">
